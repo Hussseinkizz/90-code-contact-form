@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="wrapper">
+    <header>
+      <h1 class="title">My Contact</h1>
+      <p class="subtitle">share feedback</p>
+    </header>
+    <form id="contactForm" method="POST" data-netlify="true">
+      <p hidden>
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+      <input placeholder="Name" required class="text-input input" />
+      <input placeholder="Email" required type="email" class="text-input input" />
+      <textarea placeholder="type your message here..." required class="message-input input">
+  </textarea>
+      <button type="submit" class="submit-button">send</button>
+    </form>
+  </main>
+</body>
+
+</html>
